@@ -20,10 +20,16 @@ number = int(input("Enter a number: "))
 smallest = number
 
 number = int(input("Enter another number: "))
-number2 = int(input("Enter another number:"))
-
+number2 = int(input("Enter another number: "))
+"""
 if number < smallest:
   smallest = number
 if number < smallest:
   smallest = number2
+"""
+lis = []
+lis.append(smallest)
+lis.append(number)
+lis.append(number2)
+smallest = (min(lis))
 print("The smallest number is ", smallest)
